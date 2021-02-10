@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.btn-primary{
+    color: #fff;
+    background: #168083;
+}
+.navbar input[type='checkbox'],
+.navbar .humberger-lines{
+    display: none;
+}
+.navbar{
+    box-shadow: 0px 5px 8px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: rgba(54, 50, 50, 0.6);;
+    color: #000;
+    opacity: 0.85;
+    z-index: 999;
+    top: 0;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    height: 64px;
+    align-items: center;
+}
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+    padding: 0 15px;
+}
+.logo{
+    order: 1;
+    font-size: 3rem;
+}
+.navbar a{
+    color: rgb(248, 226, 226);
+    text-decoration: none;
+    font-weight:500;
+    transition: all 0.3s ease-in-out ;
+}
+.navbar a:hover{
+    color: black;
+}
+
+/*################ showcase #################*/
+.container1{
+    box-shadow: 0px 1px 1px rgb(167, 155, 155);
+    margin-top: 30px;
+    width: 100%;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, rgba(28,171,238,0.4),rgba(253,252,252,0.21));
+    background-size: cover;
+
+}
+.leftdiv{
+    height: 200px;
+    width: 360px;
+    margin: 125px 10px;
+    text-align: center;
+    order: 1;
+}
+.leftdiv h1{
+    font-size: 35px;
+    margin: 15px 0;
+}
+.leftdiv p{
+    font-size:20px ; 
+}
+.rightdiv{
+margin: 80px 0;
+order: 2;
+}
+.rightdiv img{
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    border: 2px solid rgb(105, 94, 94);
+    box-shadow: 0px 6px 8px rgb(48, 44, 44);
+
+}
+/* ########### about #############*/
+.about{
+    display: flex;
+    height: 400px;
+    width: 100%;
+}
+.left{
+    margin-top: 20px;
+    height: 360px;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+}
+.left img{
+    margin-left: 20px;
+    height: 350px;
+    width: 450px;
+    box-shadow: 0px 8px 8px rgb(48, 44, 44);
+    transform: translateX(-150%);
+    animation: about-img-animation 1.5s ease-in-out forwards;
+}
+@keyframes about-img-animation{
+    100%{
+        transform: translate(0);
+    }
+
+}
+.right{
+    margin-top: 20px;
+    height: 380px;
+    width: 56%;
+    text-align: center;
+    transform: translateX(150%);
+    animation: about-img-animation 1.5s ease-in-out forwards;
+}
+@keyframes about-img-animation{
+    100%{
+        transform: translate(0);
+    }
+
+}
+.right h1{
+    font-size: 40px;
+    color: olivedrab;
+}
+.right p{
+    font-size: 20px;
+    color: midnightblue;
+    margin: 20px 0;
+}
+.right a{
+    background-color: #4d9fe2;
+    padding: 8px 25px;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 0;
+}
+.icons{
+    display: flex;
+    justify-content:center;
+}
+.icons a{
+    font-size: 30px;
+    color: #168083;
+    margin: 30px 0px;
+    background-color: #fff;
+}
+
+
+/* ################ skill ############## */
+.second_container{
+    margin-top: 10px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 2px 2px #aaa;
+}
+h1{
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+}
+.ldiv{
+    margin-top: 10px ;
+    height: 400px;
+    width: 60%;
+}
+.ldiv h2{
+    margin: 15px 55px;
+}
+.spn{
+    height: 25px;
+    width: 75%;
+    margin: 0 60px ;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: lightseagreen;
+}
+.spn1{
+    height: 25px; width: 80%; margin: 0 60px ; text-align: center; font-weight: 700;font-size: 20px;
+    background-color: lightseagreen;
+}
+.spn2{
+    height: 25px; width: 60%; margin: 0 60px ; text-align: center; font-weight: 700;font-size: 20px;
+    background-color: lightseagreen;
+}
+/*########### rdiv ################ */
+.rdiv{
+    margin-top: 25px;
+    height: 400px;
+    width: 50%;
+}  
+.rdiv img{
+    height: 320px;
+    width: 450px;
+    margin-left: 40px;
+    background-size:cover;
+    box-shadow:0px 8px 8px #aaa;
+    
+}
+/*########## section2 ###########*/
+.section2{
+    height: 400px;
+    width: 100%;
+    box-shadow: 0px 2px 0px 0px #aaa;
+}
+.project{
+    display: flex;
+    justify-content: space-around;
+}
+.project a{
+    text-decoration: none;
+    color: rgb(104, 103, 103);
+}
+.project1{
+    margin-top: 60px;
+    height: 270px;
+    width: 400px;
+    box-shadow: 2px 5px 7px 3px rgb(143, 141, 141);
+    background-image: url("img/abt.jpg");
+    background-size: cover;
+}
+.inner1{
+    height: 70px;
+    width:400px ;
+    background-color: rgb(200, 200, 223);
+    margin-top: 200px;
+}
+.inner1 p{margin-top: 5px;margin-left: 10px;font-size: 28px;}
+.inner2 p{ margin-top: 5px;margin-left: 10px;font-size: 27px;}
+.inner3 p{ margin-top: 5px;margin-left: 10px;font-size: 27px;}
+.project2{
+    margin-top: 60px;
+    height: 270px;
+    width: 400px;
+    background-image: url("img/front1.jpg");
+    background-size: cover;
+    box-shadow: 2px 5px 7px 3px rgb(143, 141, 141);
+}
+.inner2{
+    height: 70px;
+    width:400px ;
+    background-color: rgb(200, 200, 223);
+    margin-top: 200px;
+}
+.project3{
+    margin-top: 60px;
+    height: 270px;
+    width: 400px;
+    background-image: url("img/food-menu1.jpg");
+    background-size: cover;
+    box-shadow: 2px 5px 7px 3px rgb(143, 141, 141);
+}
+.inner3{
+    height: 70px;
+    width:400px ;
+    background-color: rgb(200, 200, 223);
+    margin-top: 200px;
+}
+/*############## contact ############### */
+.section3{
+    height:570px ;
+    width: 100%;
+    margin-top: 30px;
+    box-shadow: 0px 2px 2px #aaa;
+}
+.contact-container{
+    display: flex;
+    background: #fff;
+
+}
+.contact-image{  
+    width: 50%;
+    box-shadow: 1px 6px 7px 1px #aaa;
+}
+.contact-image img{
+    margin-left: 0px;
+    display: block;
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+.form-container{
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+.form-container input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+}
+.form-container textarea{
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    outline: none;
+}
+.form-container h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+.form-container a{
+    font-size: 1.2rem;
+
+}
+.cnt{
+    margin-top: 30px;
+}
+.text-danger{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    transform: translatex(-1400px);
+    animation: contact 1.5s ease-in-out forwards;
+}
+@keyframes contact{
+    100%{
+        transform: translateX(0);
+    }
+}
+.text-danger i{
+    font-size: 25px;
+    padding: 15px;
+    margin: 0px 15px;
+    border-radius: 50%;
+    background-color: rgb(229, 240, 236);
+    color: rgb(39, 154, 231);
+    box-shadow: 2px 2px 2px 2px #aaa;
+}
+.text-danger a{
+    padding: 10px;
+    margin: 0px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color:#0055F2 ;
+}
+/*############ demo ############### */
+.demo{
+    margin-top: 30px;
+    height:150px;
+    width: 100%;
+    display:flex;
+    justify-content: flex-start;
+}
+.demoleft{
+    font-size: 25px;
+    color: rgb(82, 124, 110);
+    margin-left: 200px;
+}
+.demoleft p{
+    padding: 7px;
+}
+.demoright{
+    font-size: 25px;
+    color: rgb(82, 124, 110);
+    margin-left: 70px;
+}
+.demoright p{padding: 7px;}
+.dm{
+    font-size: 25px; color: rgb(82, 124, 110); margin-left: 70px;
+}
+.dm p{padding: 7px;}
+#footer h2{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    font-weight: 400;
+    color: #fff;
+    background: rgb(65, 65,65);
+    margin-bottom: 5px;
+}
+/*############## responsive ###############*/
+@media (max-width:700px){
+    .navbar{
+        opacity: 0.95;
+    }
+    .navbar-container input[type='checkbox'],
+    .navbar-container .humberger-lines{
+        display: block;
+    }
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+    .navbar-container input[type='checkbox']
+    {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+    }
+    .navbar-container .humberger-lines{
+        display: block;
+        height: 32px;
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navbar-container .humberger-lines .line{
+            display: block;
+            height: 4px;
+            width: 100%;
+            border-radius: 10px;
+            background: rgb(75, 67, 67)
+    }
+    .navbar-container .humberger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar-container .humberger-lines .line2{
+        
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar-container .humberger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 90vh;
+        max-width: 250px;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 30px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+        
+    }
+    .navbar .menu-items li{
+        margin-bottom: 42px;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .navbar .menu-items li a{
+        color: #000;
+        font-size: 25px;
+    }
+    .logo{
+        position: absolute;
+        top: -6px;
+        right: 15px;
+        font-size: 3rem;
+    }
+    .navbar-container input[type='checkbox']:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+    .navbar-container input[type='checkbox']:checked ~ .humberger-lines .line1{
+        transform: rotate(45deg);
+    }
+    .navbar-container input[type='checkbox']:checked ~ .humberger-lines .line2{
+        transform: scaleY(0);
+    }
+    .navbar-container input[type='checkbox']:checked ~ .humberger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+    /*#### showcase ####*/
+    .container1{
+        height: 500px;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .leftdiv{
+        margin: 0px 80px;
+        order: 2;
+    }
+    .rightdiv{
+        order: 1;
+        margin: 0px 80px;
+        margin-top: 50px;
+    }
+    .rightdiv img{
+        box-shadow: 0px 8px 10px #aaa;
+    }
+    /*########## skill ############ */
+    .second_container{
+        flex-direction: column;
+        height: 650px;
+    }
+    .ldiv{
+        margin: 0px 70px;
+    }
+    .rdiv img{
+        margin-top: -20px;
+        width: 300px;
+        margin-left: 60px;
+        border-radius: 50%;
+    }
+    .left{
+        margin-left: 30px;
+    }
+    .left img{
+        width: 400px;
+    }
+    .about{
+        flex-direction: column;
+        height: 870px;
+    }
+    .right{
+        margin-top: -10px;
+        margin-left: 100px;
+    }
+    .second_container{
+        height: 720px;
+    }
+    .form-container{
+        margin-top: -22px;
+    }
+    .demo{
+        margin-left: -180px;
+        height: 220px;
+    }
+    .demo p{
+        font-size: 20px;
+    }  
+    .section3{
+        height: 750px;
+    }
+    .text-danger{
+        flex-direction: column;
+    }
+    .text-danger p{
+        margin: 10px 0px;
+    }
+    .section2{
+        height: 1020px;
+    }
+    .project{
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .project1{
+        margin-top: 15px ;
+    }
+   
+}
